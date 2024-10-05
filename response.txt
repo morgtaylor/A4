@@ -1,0 +1,24 @@
+Thoughts: 
+It was interesting to see how consisten the results were for each iteration of testing. The linear sort was much faster than the merge sort, 
+as I expected it to be. If you have the chance to run just one iteration and look at the visual of the sorts provided, it is quite interesting 
+to see the colored sorts. It's by no means perfect, but I thought it was really cool!
+
+Iteration 1:
+                     linear (ms)   merge (ms)
+         1 images      89.885ms     529.043ms
+         2 images     196.091ms    1018.472ms
+         4 images     392.486ms    2023.755ms
+         8 images     759.592ms    3990.723ms
+        16 images    1478.091ms    8386.458ms
+        32 images    3194.257ms   16065.120ms
+        64 images    7041.749ms   32809.206ms
+
+Iteration 2:
+                     linear (ms)   merge (ms)
+         1 images      88.366ms     547.347ms
+         2 images     191.332ms    1037.024ms
+         4 images     380.720ms    2004.849ms
+         8 images     764.993ms    4049.823ms
+        16 images    1708.470ms    8503.908ms
+        32 images    3198.559ms   16646.578ms
+        64 images    7454.801ms   34907.085ms
