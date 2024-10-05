@@ -57,24 +57,31 @@ n = 1
 image_size = (500, 500)
 print(f"{n:10} images    linear (ms)   merge (ms)")
 while n <= 100: 
-    images = [generate_image(image_size) for _ in range(n)]
+    linear_images = [generate_image(image_size) for _ in range(n)]
+    merge_images = linear_images[:]
 
-    # original_image = show_image(images[0], image_size)
+    # original_image = show_image(linear_images[n-1], image_size)
+    # original_image.save(f"original.png")
     # original_image.show(title="Original Image")
 
     start_time = time.perf_counter()
-    for img_pixels in images:
+    for img_pixels in linear_images:
         sorted_pixels = counting_sort(img_pixels, 0)
         sorted_pixels = counting_sort(sorted_pixels, 1)
         sorted_pixels = counting_sort(sorted_pixels, 2)
     linear_time = (time.perf_counter() - start_time) * 1000  # Time in milliseconds
-
+    
+    # sorted_image = show_image(sorted_pixels, image_size)
+    # sorted_image.save(f"linear.png")
+    # sorted_image.show(title="Sorted Image")
+    
     start_time = time.perf_counter()
-    for img_pixels in images:
+    for img_pixels in merge_images:
         merge_sort(img_pixels)  # Sort by RGB tuple using merge sort
     merge_time = (time.perf_counter() - start_time) * 1000  # Time in milliseconds
 
     # sorted_image = show_image(sorted_pixels, image_size)
+    # sorted_image.save(f"merge.png")
     # sorted_image.show(title="Sorted Image")
 
     print(f"{n:10} images  {linear_time:10.3f}ms  {merge_time:10.3f}ms")
