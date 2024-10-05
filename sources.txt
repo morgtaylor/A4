@@ -2,6 +2,7 @@ GPT:
 please provide some ideas for sorting programs that use radix sort
         gave idea of image compression using sorting by pixel color
 how to use pillow to show images
+how to copy an array (shallow copy)
 various debugging questions regarding rgb pixels and sorting them 
 attempted with hex too but didn't work well with the timing poriton of the linear sort
 
