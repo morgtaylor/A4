@@ -1,0 +1,10 @@
+GPT:
+please provide some ideas for sorting programs that use radix sort
+        gave idea of image compression using sorting by pixel color
+how to use pillow to show images
+various debugging questions regarding rgb pixels and sorting them 
+attempted with hex too but didn't work well with the timing poriton of the linear sort
+
+https://www.geeksforgeeks.org/python-program-for-radix-sort/ -> research not used except to determine which sort would be good for sorting RGB values
+https://www.geeksforgeeks.org/counting-sort/
+https://www.geeksforgeeks.org/merge-sort/
